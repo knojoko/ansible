@@ -1,0 +1,9 @@
+[all]
+192.168.2.4
+#localhost ansible_user=khaya
+
+[desktops]
+#localhost ansible_user=khaya
+
+[servers]
+192.168.2.4 ansible_user=server1
