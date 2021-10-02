@@ -1,16 +1,17 @@
 ---
 - name: update
   hosts: ubuntu
-    remote_user: khaya
+    become_user: khaya
     become: true
-    tasks:
-      - name: Upgrade all installed packages for Ubuntu
+      tasks:
+        name: Upgrade all installed packages for Ubuntu
         apt:
           name: "*"
           state: latest
           update_cache: yes
           force_apt_get: no
           when: ansible_distribution == "Ubuntu
+
 
 
 
