@@ -1,5 +1,5 @@
 ---
-- hosts: Ubuntu
+- hosts: ubuntu
     become: true
     tasks:
       - name: Upgrade all installed packages for Ubuntu
