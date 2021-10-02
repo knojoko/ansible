@@ -2,11 +2,11 @@
 - name: test
   hosts: ubuntu
   become_user: khaya
-  become: true
+  become: True
   tasks:
     name: Upgrade all installed packages for Ubuntu
     apt:
       - name: "*"
         state: latest
         update_cache: yes
-        force_apt_get: yes
+        force_apt_get: True
