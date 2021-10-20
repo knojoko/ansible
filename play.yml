@@ -4,7 +4,7 @@
   become_user: khaya
   become: True
   tasks:
-    name: Upgrade all installed packages for Ubuntu
+    name: Upgrade all installed packages for Ubuntu -
     apt:
       - name: "*"
         state: latest
