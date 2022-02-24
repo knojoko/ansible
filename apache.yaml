@@ -1,0 +1,11 @@
+---
+- hosts: ubuntu
+  become: yes
+
+  tasks:
+
+  - name: install latest version of Apache
+    apt:
+      name: apache2
+      update_cache
+
