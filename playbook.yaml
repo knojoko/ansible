@@ -1,0 +1,11 @@
+---
+- hosts: ubuntu
+  become: yes
+  tasks:
+
+  - name: upgrade all installed packages for ubntu
+    apt:
+      name: "*"
+      update_cache: yes
+      state: latest
+--
